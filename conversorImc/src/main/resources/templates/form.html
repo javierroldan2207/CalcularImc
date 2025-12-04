@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<form>
+  <div class="form-group row">
+    <label for="weigth" class="col-4 col-form-label">Peso</label> 
+    <div class="col-8">
+      <input id="weigth" name="peso" type="text" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="age" class="col-4 col-form-label">Edad</label> 
+    <div class="col-8">
+      <input id="age" name="edad" type="text" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="sexo" class="col-4 col-form-label">Sexo</label> 
+    <div class="col-8">
+      <select id="sexo" name="sexo" class="custom-select">
+        <option value="h">Hombre</option>
+        <option value="m">Mujer</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="heigth" class="col-4 col-form-label">Altura</label> 
+    <div class="col-8">
+      <input id="heigth" name="altura" type="text" class="form-control">
+    </div>
+  </div> 
+  <div class="form-group row">
+    <div class="offset-4 col-8">
+      <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>
+<span th:text="${result}"></span>
+
+
+
